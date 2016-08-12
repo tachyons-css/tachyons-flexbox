@@ -1,7 +1,7 @@
 {
   "name": "tachyons-flexbox",
   "description": "Flexbox CSS module for Tachyons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "mrmrs",
     "email": "hi@mrmrs.cc",
@@ -21,7 +21,7 @@
   "repository": "tachyons-css/tachyons-flexbox",
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^0.6.1",
+    "tachyons-cli": "^1.0.1",
     "watch": "^0.19.1"
   },
   "scripts": {

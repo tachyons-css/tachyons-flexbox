@@ -1,4 +1,4 @@
-# tachyons-flexbox 1.0.0
+# tachyons-flexbox 1.0.1
 
 Flexbox CSS module for Tachyons
 
