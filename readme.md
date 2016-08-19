@@ -1,10 +1,10 @@
-# tachyons-flexbox 1.0.1
+# tachyons-flexbox 1.1.0
 
 Flexbox CSS module for Tachyons
 
 #### Stats
 
-1047 | 148 | 156
+1065 | 152 | 160
 ---|---|---
 bytes | selectors | declarations
 
@@ -73,6 +73,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 .flex-auto { flex: 1 1 auto; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
 .flex-none { flex: none; }
 .flex-column { flex-direction: column; }
+.flex-row { flex-direction: row; }
 .flex-wrap { flex-wrap: wrap; }
 .items-start { align-items: flex-start; }
 .items-end { align-items: flex-end; }
@@ -111,6 +112,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
  .flex-auto-ns { flex: 1 1 auto; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
  .flex-none-ns { flex: none; }
  .flex-column-ns { flex-direction: column; }
+ .flex-row-ns { flex-direction: row; }
  .flex-wrap-ns { flex-wrap: wrap; }
  .items-start-ns { align-items: flex-start; }
  .items-end-ns { align-items: flex-end; }
@@ -150,6 +152,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
  .flex-auto-m { flex: 1 1 auto; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
  .flex-none-m { flex: none; }
  .flex-column-m { flex-direction: column; }
+ .flex-row-m { flex-direction: row; }
  .flex-wrap-m { flex-wrap: wrap; }
  .items-start-m { align-items: flex-start; }
  .items-end-m { align-items: flex-end; }
@@ -189,6 +192,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
  .flex-auto-l { flex: 1 1 auto; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
  .flex-none-l { flex: none; }
  .flex-column-l { flex-direction: column; }
+ .flex-row-l { flex-direction: row; }
  .flex-wrap-l { flex-wrap: wrap; }
  .items-start-l { align-items: flex-start; }
  .items-end-l { align-items: flex-end; }
