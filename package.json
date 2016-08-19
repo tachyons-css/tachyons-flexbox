@@ -19,7 +19,7 @@
     "flexbox"
   ],
   "repository": "tachyons-css/tachyons-flexbox",
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "tachyons-cli": "^1.0.1",
     "watch": "^0.19.1"
