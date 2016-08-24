@@ -1,4 +1,4 @@
-# tachyons-flexbox 1.1.0
+# tachyons-flexbox 1.2.3
 
 Flexbox CSS module for Tachyons
 
@@ -16,10 +16,20 @@ bytes | selectors | declarations
 npm install --save-dev tachyons-flexbox
 ```
 
+Learn more about using css installed with npm:
+* https://webpack.github.io/docs/stylesheets.html
+* https://github.com/defunctzombie/npm-css
+
 #### With Git
 
+http:
 ```
 git clone https://github.com/tachyons-css/tachyons-flexbox
+```
+
+ssh:
+```
+git clone git@github.com:tachyons-css/tachyons-flexbox.git
 ```
 
 ## Usage
@@ -41,6 +51,14 @@ $ tachyons path/to/css-file.css > dist/t.css
 
 #### Using the CSS
 
+##### CDN
+The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
+
+```
+<link rel="stylesheet" href="http://npmcdn.com/tachyons-flexbox@1.2.3/css/tachyons-flexbox.min.css" />
+```
+
+##### Locally
 The built CSS is located in the `css` directory. It contains an unminified and minified version.
 You can either cut and paste that css or link to it directly in your html.
 
