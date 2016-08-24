@@ -4,7 +4,7 @@ Flexbox CSS module for Tachyons
 
 #### Stats
 
-1065 | 152 | 160
+1064 | 152 | 160
 ---|---|---
 bytes | selectors | declarations
 
@@ -124,7 +124,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 .order-7 { order: 7; }
 .order-8 { order: 8; }
 .order-last { order: 99999; }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 30em) {
  .flex-ns { display: flex; }
  .inline-flex-ns { display: inline-flex; }
  .flex-auto-ns { flex: 1 1 auto; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
@@ -164,7 +164,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
  .order-8-ns { order: 8; }
  .order-last-ns { order: 99999; }
 }
-@media screen and (min-width: 48em) and (max-width: 64em) {
+@media screen and (min-width: 30em) and (max-width: 60em) {
  .flex-m { display: flex; }
  .inline-flex-m { display: inline-flex; }
  .flex-auto-m { flex: 1 1 auto; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
@@ -204,7 +204,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
  .order-8-m { order: 8; }
  .order-last-m { order: 99999; }
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 60em) {
  .flex-l { display: flex; }
  .inline-flex-l { display: inline-flex; }
  .flex-auto-l { flex: 1 1 auto; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
