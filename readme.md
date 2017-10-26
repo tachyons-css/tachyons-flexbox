@@ -1,10 +1,10 @@
-# tachyons-flexbox 2.0.5
+# tachyons-flexbox 2.1.0
 
 Flexbox CSS module for Tachyons
 
 #### Stats
 
-1436 | 152 | 428
+1662 | 184 | 516
 ---|---|---
 bytes | selectors | declarations
 
@@ -55,7 +55,7 @@ $ tachyons path/to/css-file.css > dist/t.css
 The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
 
 ```
-<link rel="stylesheet" href="http://unpkg.com/tachyons-flexbox@2.0.5/css/tachyons-flexbox.min.css" />
+<link rel="stylesheet" href="http://unpkg.com/tachyons-flexbox@2.1.0/css/tachyons-flexbox.min.css" />
 ```
 
 ##### Locally
@@ -93,6 +93,10 @@ Running `$ npm start` will process the source css and place the built css in the
 .flex-column { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 .flex-row { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
 .flex-wrap { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.flex-nowrap { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+.flex-wrap-reverse { -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; }
+.flex-column-reverse { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+.flex-row-reverse { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
 .items-start { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 .items-end { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
 .items-center { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
@@ -124,6 +128,10 @@ Running `$ npm start` will process the source css and place the built css in the
 .order-7 { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }
 .order-8 { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }
 .order-last { -webkit-box-ordinal-group: 100000; -ms-flex-order: 99999; order: 99999; }
+.flex-grow-0 { -webkit-box-flex: 0; -ms-flex-positive: 0; flex-grow: 0; }
+.flex-grow-1 { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+.flex-shrink-0 { -ms-flex-negative: 0; flex-shrink: 0; }
+.flex-shrink-1 { -ms-flex-negative: 1; flex-shrink: 1; }
 @media screen and (min-width: 30em) {
  .flex-ns { display: -webkit-box; display: -ms-flexbox; display: flex; }
  .inline-flex-ns { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
@@ -132,6 +140,10 @@ Running `$ npm start` will process the source css and place the built css in the
  .flex-column-ns { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
  .flex-row-ns { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
  .flex-wrap-ns { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+ .flex-nowrap-ns { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+ .flex-wrap-reverse-ns { -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; }
+ .flex-column-reverse-ns { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+ .flex-row-reverse-ns { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
  .items-start-ns { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
  .items-end-ns { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
  .items-center-ns { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
@@ -163,6 +175,10 @@ Running `$ npm start` will process the source css and place the built css in the
  .order-7-ns { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }
  .order-8-ns { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }
  .order-last-ns { -webkit-box-ordinal-group: 100000; -ms-flex-order: 99999; order: 99999; }
+ .flex-grow-0-ns { -webkit-box-flex: 0; -ms-flex-positive: 0; flex-grow: 0; }
+ .flex-grow-1-ns { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+ .flex-shrink-0-ns { -ms-flex-negative: 0; flex-shrink: 0; }
+ .flex-shrink-1-ns { -ms-flex-negative: 1; flex-shrink: 1; }
 }
 @media screen and (min-width: 30em) and (max-width: 60em) {
  .flex-m { display: -webkit-box; display: -ms-flexbox; display: flex; }
@@ -172,6 +188,10 @@ Running `$ npm start` will process the source css and place the built css in the
  .flex-column-m { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
  .flex-row-m { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
  .flex-wrap-m { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+ .flex-nowrap-m { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+ .flex-wrap-reverse-m { -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; }
+ .flex-column-reverse-m { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+ .flex-row-reverse-m { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
  .items-start-m { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
  .items-end-m { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
  .items-center-m { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
@@ -203,6 +223,10 @@ Running `$ npm start` will process the source css and place the built css in the
  .order-7-m { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }
  .order-8-m { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }
  .order-last-m { -webkit-box-ordinal-group: 100000; -ms-flex-order: 99999; order: 99999; }
+ .flex-grow-0-m { -webkit-box-flex: 0; -ms-flex-positive: 0; flex-grow: 0; }
+ .flex-grow-1-m { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+ .flex-shrink-0-m { -ms-flex-negative: 0; flex-shrink: 0; }
+ .flex-shrink-1-m { -ms-flex-negative: 1; flex-shrink: 1; }
 }
 @media screen and (min-width: 60em) {
  .flex-l { display: -webkit-box; display: -ms-flexbox; display: flex; }
@@ -212,6 +236,10 @@ Running `$ npm start` will process the source css and place the built css in the
  .flex-column-l { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
  .flex-row-l { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
  .flex-wrap-l { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+ .flex-nowrap-l { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+ .flex-wrap-reverse-l { -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; }
+ .flex-column-reverse-l { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+ .flex-row-reverse-l { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
  .items-start-l { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
  .items-end-l { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
  .items-center-l { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
@@ -243,6 +271,10 @@ Running `$ npm start` will process the source css and place the built css in the
  .order-7-l { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }
  .order-8-l { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }
  .order-last-l { -webkit-box-ordinal-group: 100000; -ms-flex-order: 99999; order: 99999; }
+ .flex-grow-0-l { -webkit-box-flex: 0; -ms-flex-positive: 0; flex-grow: 0; }
+ .flex-grow-1-l { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+ .flex-shrink-0-l { -ms-flex-negative: 0; flex-shrink: 0; }
+ .flex-shrink-1-l { -ms-flex-negative: 1; flex-shrink: 1; }
 }
 ```
 
