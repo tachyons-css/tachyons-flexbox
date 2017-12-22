@@ -7,7 +7,7 @@
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "style": "src/tachyons-flexbox.css",
+  "style": "src/tachyons-flexbox.min.css",
   "main": "src/tachyons-flexbox.css",
   "files": [
     "src",
